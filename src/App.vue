@@ -1,26 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <PageHeader/>
+  <!-- <ResizableSidebar/> -->
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  import PageHeader from './components/PageHeader.vue';
+  // import ResizableSidebar from './components/ResizableSidebar.vue';
+  export default {
+    name: 'App',
+    components: {
+      PageHeader,
+      // ResizableSidebar,
+    },
+  };
 </script>
 
 <style>
-#app {
+  #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
-}
+  }
+
+
 </style>
